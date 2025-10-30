@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - Finanzas Escolares</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light">
+  <div class="container py-5">
+    <h1 class="mb-4 text-center"> Dashboard de Aprendizaje</h1>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title"> Tus Puntos</h5>
+        <button class="btn btn-primary" onclick="consultarPuntos()">Consultar</button>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title"> Actividades Totales</h5>
+        <button class="btn btn-secondary" onclick="mostrarTotalActividades()">Ver Total</button>
+        <p id="totalActividades" class="mt-2"></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title"> Ranking de Estudiantes</h5>
+        <p class="text-muted">* Esta sección puede simularse o conectarse a una base de datos externa</p>
+        <ul class="list-group" id="rankingEstudiantes">
+          <li class="list-group-item">Oscar - 120 puntos</li>
+          <li class="list-group-item">Ana - 100 puntos</li>
+          <li class="list-group-item">Luis - 80 puntos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
